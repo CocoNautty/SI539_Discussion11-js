@@ -76,12 +76,15 @@
         // Only use JavaScript to complete the following steps
 
         // Step 1: Create Function to Change Title and rewrite h1 element to "Celebrate Michigan Football!"
-        //function
-
-            //Step 2: log the message to the console
+        function changeTitle() {
+            document.querySelector("h1").innerHTML = "Celebrate Michigan Football!";
+            //Step 2: log the message to the console when the button is clicked
+            console.log("Title has been changed to Celebrate Michigan Football!");
+        }
 
 
         //Step 3: style the background to color #003366
+        document.body.style.backgroundColor = "#003366";
 
         // Step 4: Add the correct ID for the button, create an element 'p' and add a message "2023 Champions!" to p
         document.getElementById("add ID here").addEventListener("click", function() {
@@ -96,6 +99,9 @@
 
         function displayInformation() {
             // Step 6: Update the three span elements using ONLY JavaScript
+            document.getElementById("URL").innerHTML = window.location.href;
+            document.getElementById("items").innerHTML = playerItems.length;
+            document.getElementById("time").innerHTML = new Date();
 
         }
     </script>
